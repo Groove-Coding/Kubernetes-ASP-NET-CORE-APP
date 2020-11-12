@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: asp-net-app
+  labels:    
+    app: web  
+spec:
+  containers:
+    - name: web-ctr        
+      image: groovecoding7/kube-asp-net
+      ports:               
+        - containerPort: 8086
+ 
